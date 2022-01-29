@@ -3,7 +3,7 @@ FROM ruby:$RUBY_VERSION-slim-buster AS builder
 
 RUN touch run_builder_v1.txt
 
-FROM ruby:$RUBY_VERSION-slim-buster AS package
+FROM builder AS package
 
 RUN touch run_package_v1.txt
 
