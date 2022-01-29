@@ -7,4 +7,5 @@ services:
       context: .
       target: app
       cache_from: 
-        - gendosu/multistage-example
+        - "gendosu/multistage-example-builder"
+        - "gendosu/multistage-example-package"
