@@ -1,7 +1,7 @@
 ARG RUBY_VERSION=2.7.2
 FROM ruby:$RUBY_VERSION-slim-buster AS builder
 
-RUN touch run_builder_v1.txt
+RUN touch run_builder_v2.txt
 
 FROM builder AS package
 
