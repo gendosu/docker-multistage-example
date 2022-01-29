@@ -2,4 +2,9 @@ version: "3.7"
 
 services:
   app:
-    build: .
+    image: gendosu/multistage-example
+    build:
+      context: .
+      target: app
+      cache_from: 
+        - gendosu/multistage-example
