@@ -1,0 +1,3 @@
+FROM gendosu/multistage-example-builder:latest
+
+RUN echo 'Dockerfile.dev'
